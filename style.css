@@ -1,105 +1,320 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: black;
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+nav img {
+  width: 65px;
+  margin-right: 600px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .img-section img {
+  width: 470px;
+  padding-top: 10px;
+}
+.container .text-area h1 {
+  font-size: 50px;
+  padding-top: 120px;
+  line-height: 80px;
+}
+.container .text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding-left: 100px;
+}
+.container .text-area i {
+  font-size: 25px;
+  padding-right: 18px;
+}
+.container .text-area button {
+  height: 7vh;
+  width: 160px;
+  background-color: rgb(207, 27, 27);
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 19px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(207, 27, 27);
+  position: relative;
+  margin-top: 150px;
+}
+.heading h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.heading div {
+  background-color: rgb(207, 27, 27);
+  height: 0.26rem;
+  width: 100px;
+  position: absolute;
+  top: 48px;
+}
+.about .img_section img {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+}
+.about {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.about .text_area h2 {
+  margin-bottom: 20px;
+  font-size: 33px;
+}
+.about .text_area p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  text-align: center;
+  padding-top: 120px;
+  height: 40vh;
+  padding: 120px 300px 0px 300px;
+}
+
+.skills .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+}
+.skills .div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+}
+.skills .div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+}
+.skills .div4 {
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+}
+.skills .div5 {
+  grid-area: 3 / 1 / 4 / 2;
+  position: relative;
+}
+.skills .div6 {
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+}
+
+.skills .div1 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.skills .div2 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.skills .div3 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.skills .div4 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.skills .div5 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.skills .div6 div {
+  background-color: rgb(207, 27, 27);
+  height: 0.3rem;
+  width: 28rem;
+  position: absolute;
+  top: 35px;
+  border-radius: 10px;
+}
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  margin: 80px 280px 70px 280px;
+}
+
+.project .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.project .div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.project .div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.project .div4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.project .div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.project .div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.project .div1 img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project .div2 img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project .div3 img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project .div4 img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project .div5 img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.project .div6 img{
+    width: 300px;
+    border-radius: 15px;
+}
+.button{
+    text-align: center;
+}
+.button a{
+    background-color: rgb(207, 27, 27) ;
     color: white;
-}
-
-
-nav{
-    height: 10vh;
-    width: 100%;
-    background-color: rgb(31,31,31);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    top: 50%;
-    left: 50%;
-    font-size: 30px;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-nav img{
-    width: 65px;
-    margin-right: 600px;
-}
-nav a{
     text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 550;
+    padding: .75rem 2.5rem;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 10px;
 }
-.container{
+.form{
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-}
-.container .img-section img{
-    width: 470px;
-    padding-top: 10px;
-}
-.container .text-area h1{
-    font-size: 50px;
-    padding-top: 120px;
-    line-height: 80px;
-    
-}
-.container .text-area{
-    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 150px;
-    padding-left: 100px;
-
+    gap: 30px;
 }
-.container .text-area i{
-    font-size: 25px;
-    padding-right: 18px;
+.form input{
+    height: 50px;
+    border-radius: 10px;
+    width: 300px;
+    padding-left: 20px;
 }
-.container .text-area button{
-    height: 7vh;
-    width: 160px;
-    background-color: rgb(207,27,27);
+.form input::placeholder{
+    font-weight: 600;
+    font-size: 15px;
+}
+.form .subject{
+    height: 300px;
+}
+.form button{
+    height: 45px;
+    width: 120px;
+    background-color: rgb(207, 27, 27) ;
     color: white;
-    border: none;
     font-weight: 600;
     font-size: 18px;
+    border: none;
     border-radius: 10px;
-    margin-top: 19px;
 }
-.heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(207,27,27);
-}
-.heading h1{
-    font-weight: 700;
-    font-size:40px;
-}
-.about .img_section img{
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
-}
-.about{
-    height: 90vh;
+footer{
+    height: 33vh;
     width: 100%;
+    background-color: #14191b;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-around;
 }
-.about .text_area h2{
-    margin-bottom: 20px;
-    font-size: 33px;
+footer span{
+    font-size: 25px;
 }
-.about .text_area p{
-    font-size: 15px;
-    line-height: 25px;
-    
+footer span i{
+    margin-right: 20px;
+}
+footer h1{
+    font-size: 30px;
+}
+footer p{
+    font-weight: 600;
 }
