@@ -34,6 +34,8 @@ nav a{
     font-weight: 550;
 }
 .container{
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -69,4 +71,35 @@ nav a{
     border-radius: 10px;
     margin-top: 19px;
 }
-
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(207,27,27);
+}
+.heading h1{
+    font-weight: 700;
+    font-size:40px;
+}
+.about .img_section img{
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+.about{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+.about .text_area h2{
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+.about .text_area p{
+    font-size: 15px;
+    line-height: 25px;
+    
+}
