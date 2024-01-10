@@ -437,7 +437,7 @@ nav .fa-bars {
   .project {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    margin:  5% 28%;
+    margin:  5% 0% 0% 20%;
   }
 
   .project .div1 {
