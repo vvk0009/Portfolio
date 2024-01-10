@@ -8,7 +8,7 @@ body {
   background-color: black;
   color: white;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -29,6 +29,9 @@ nav {
 nav img {
   width: 65px;
   margin-right: 600px;
+}
+.mobile_nav {
+  display: none;
 }
 nav a {
   text-decoration: none;
@@ -153,7 +156,7 @@ nav a {
 .skills .div1 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -162,7 +165,7 @@ nav a {
 .skills .div2 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -171,7 +174,7 @@ nav a {
 .skills .div3 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -180,7 +183,7 @@ nav a {
 .skills .div4 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -189,7 +192,7 @@ nav a {
 .skills .div5 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -198,7 +201,7 @@ nav a {
 .skills .div6 div {
   background-color: rgb(207, 27, 27);
   height: 0.3rem;
-  width: 28rem;
+  width: 103%;
   position: absolute;
   top: 35px;
   border-radius: 10px;
@@ -230,108 +233,231 @@ nav a {
 .project .div6 {
   grid-area: 2 / 3 / 3 / 4;
 }
-.project .div1 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div1 img {
+  width: 300px;
+  border-radius: 15px;
 }
 
-.project .div2 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div2 img {
+  width: 300px;
+  border-radius: 15px;
 }
 
-.project .div3 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div3 img {
+  width: 300px;
+  border-radius: 15px;
 }
 
-.project .div4 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div4 img {
+  width: 300px;
+  border-radius: 15px;
 }
 
-.project .div5 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div5 img {
+  width: 300px;
+  border-radius: 15px;
 }
 
-.project .div6 img{
-    width: 300px;
-    border-radius: 15px;
+.project .div6 img {
+  width: 300px;
+  border-radius: 15px;
 }
-.button{
-    text-align: center;
+.button {
+  text-align: center;
 }
-.button a{
-    background-color: rgb(207, 27, 27) ;
-    color: white;
-    text-decoration: none;
-    padding: .75rem 2.5rem;
-    font-weight: 800;
-    font-size: 18px;
-    border-radius: 10px;
+.button a {
+  background-color: rgb(207, 27, 27);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 10px;
 }
-.form{
-    height: 100vh;
-    width: 100%;
+.form {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.form input {
+  height: 50px;
+  border-radius: 10px;
+  width: 300px;
+  padding-left: 20px;
+}
+.form input::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+}
+.form .subject {
+  height: 300px;
+}
+.form button {
+  height: 45px;
+  width: 120px;
+  background-color: rgb(207, 27, 27);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+footer {
+  height: 33vh;
+  width: 100%;
+  background-color: #14191b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer span {
+  font-size: 25px;
+}
+footer span i {
+  margin-right: 20px;
+}
+footer h1 {
+  font-size: 30px;
+}
+footer p {
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(20, 25, 27);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 27, 27);
+  border-radius: 10px;
+}
+nav .fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .mobile_nav {
+    display: block;
     display: flex;
+    position: fixed;
+    top: 0;
+    background-color: black;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 1;
+  }
+  .mobile_nav img {
+    width: 65px;
+  }
+
+  .fa-bars {
+    font-size: 28px;
+  }
+  .container {
+    flex-direction: column;
+    margin-left: -80px;
+    margin-top: -70px;
+  }
+  .container .text-area h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .container .social {
+    display: flex;
     flex-direction: column;
     gap: 30px;
-}
-.form input{
-    height: 50px;
-    border-radius: 10px;
-    width: 300px;
-    padding-left: 20px;
-}
-.form input::placeholder{
-    font-weight: 600;
-    font-size: 15px;
-}
-.form .subject{
-    height: 300px;
-}
-.form button{
-    height: 45px;
-    width: 120px;
-    background-color: rgb(207, 27, 27) ;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-}
-footer{
-    height: 33vh;
-    width: 100%;
-    background-color: #14191b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-footer span{
-    font-size: 25px;
-}
-footer span i{
-    margin-right: 20px;
-}
-footer h1{
-    font-size: 30px;
-}
-footer p{
-    font-weight: 600;
-}
+  }
 
-::-webkit-scrollbar{
-    width: 5px;
-}
-::-webkit-scrollbar-track{
-    background: rgb(20,25,27);
-}
-::-webkit-scrollbar-thumb{
-    background: rgb(207, 27, 27);
-    border-radius: 10px;
+  .container .img-section {
+    position: absolute;
+    left: 30%;
+    top: 330px;
+  }
+
+  .container .img-section img {
+    width: 300px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about .img_section img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .about .text_area {
+    margin-top: -70px;
+    text-align: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+    padding-top: 120px;
+    height: 40vh;
+    padding: 0px 30px;
+    margin-top: 20px;
+  }
+
+  .skills .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .skills .div2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .skills .div3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .skills .div4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .skills .div5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .skills .div6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+
+  .project {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin:  5% 28%;
+  }
+
+  .project .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .project .div2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .project .div3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .project .div4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .project .div5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .project .div6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+
 }
