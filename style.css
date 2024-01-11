@@ -390,11 +390,11 @@ nav .fa-bars {
   .container .img-section {
     position: absolute;
     left: 20%;
-    top: 230px;
+    top: 280px;
   }
 
   .container .img-section img {
-    width: 300px;
+    width: 70%;
   }
 
   .about {
