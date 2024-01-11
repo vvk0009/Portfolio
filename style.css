@@ -84,6 +84,7 @@ nav a {
   color: rgb(207, 27, 27);
   position: relative;
   margin-top: 150px;
+  width: 100%;
 }
 .heading h1 {
   font-weight: 700;
@@ -126,6 +127,7 @@ nav a {
   padding-top: 120px;
   height: 40vh;
   padding: 120px 300px 0px 300px;
+  width: 100%;
 }
 
 .skills .div1 {
@@ -446,6 +448,7 @@ nav .fa-bars {
   .mobile_project{
     display: block;
     padding: 25px;
+    width: 100%;
   }
 
   .mobile_project .div1 img {
