@@ -362,6 +362,7 @@ nav .fa-bars {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 0px 20px;
     z-index: 1;
   }
   .mobile_nav img {
@@ -388,8 +389,8 @@ nav .fa-bars {
 
   .container .img-section {
     position: absolute;
-    left: 30%;
-    top: 330px;
+    left: 20%;
+    top: 230px;
   }
 
   .container .img-section img {
