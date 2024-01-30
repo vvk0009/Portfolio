@@ -69,13 +69,16 @@ nav a {
   height: 7vh;
   width: 160px;
   background-color: rgb(207, 27, 27);
-  color: white;
   border: none;
-  font-weight: 600;
-  font-size: 18px;
   border-radius: 10px;
   margin-top: 19px;
   cursor: pointer;
+}
+.container .text-area button a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 .heading {
   display: flex;
