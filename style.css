@@ -118,6 +118,9 @@ nav a {
   font-size: 15px;
   line-height: 25px;
 }
+.intro{
+  display: none;
+}
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -344,7 +347,7 @@ footer p {
 nav .fa-bars {
   display: none;
 }
-.mobile_project{
+.mobile_project {
   display: none;
 }
 
@@ -439,13 +442,11 @@ nav .fa-bars {
     grid-area: 6 / 1 / 7 / 2;
   }
 
-
   .project {
     display: none;
-
   }
 
-  .mobile_project{
+  .mobile_project {
     display: block;
     padding: 25px;
     width: 100%;
@@ -456,36 +457,40 @@ nav .fa-bars {
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  
+
   .mobile_project .div2 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  
+
   .mobile_project .div3 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  
+
   .mobile_project .div4 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  
+
   .mobile_project .div5 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  
+
   .mobile_project .div6 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
   }
-
-
+  .intro{
+    display: block;
+  }
+  .intro_1{
+    display: none;
+  }
 }
