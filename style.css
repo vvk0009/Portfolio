@@ -211,65 +211,10 @@ nav a {
   top: 35px;
   border-radius: 10px;
 }
-.project {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 25px;
-  padding: 80px 20px 70px 280px;
-  width: 100%;
-}
 
-.project .div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.project .div2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.project .div3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.project .div4 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.project .div5 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.project .div6 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-.project .div1 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.project .div2 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.project .div3 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.project .div4 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.project .div5 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.project .div6 img {
-  width: 300px;
-  border-radius: 15px;
-}
 .button {
   text-align: center;
+  margin-top: 40px;
 }
 .button a {
   background-color: rgb(207, 27, 27);
@@ -350,6 +295,45 @@ nav .fa-bars {
 .mobile_project {
   display: none;
 }
+
+.test .div1 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test  .div2 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test  .div3 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test  .div4 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test  .div5 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test  .div6 img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.test div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 
 @media (max-width: 768px) {
   nav {
@@ -442,51 +426,6 @@ nav .fa-bars {
     grid-area: 6 / 1 / 7 / 2;
   }
 
-  .project {
-    display: none;
-  }
-
-  .mobile_project {
-    display: block;
-    padding: 25px;
-    width: 100%;
-  }
-
-  .mobile_project .div1 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile_project .div2 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile_project .div3 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile_project .div4 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile_project .div5 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
-
-  .mobile_project .div6 img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-  }
   .intro {
     display: block;
   }
