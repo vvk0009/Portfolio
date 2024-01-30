@@ -118,7 +118,7 @@ nav a {
   font-size: 15px;
   line-height: 25px;
 }
-.intro{
+.intro {
   display: none;
 }
 .skills {
@@ -487,10 +487,10 @@ nav .fa-bars {
     border-radius: 15px;
     margin-bottom: 20px;
   }
-  .intro{
+  .intro {
     display: block;
   }
-  .intro_1{
+  .intro_1 {
     display: none;
   }
 }
