@@ -16,12 +16,31 @@
 
 <body>
     <nav>
-        <img src="./img/logo-removebg-preview.png" alt="">
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
+        <div>
+            <img src="./img/logo-removebg-preview.png" alt="" id="logo">
+        </div>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#project">Project</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <div class="theme_btn">
+            <!-- <p id="change_theme">Mode</p> -->
+            <img src="./img/sun.png" alt="" id="icon">
+        </div>
     </nav>
 
     <section class="mobile_nav">
@@ -181,7 +200,9 @@
 
     <script>
         AOS.init();
+
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
