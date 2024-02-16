@@ -7,7 +7,6 @@
 body {
   background-color: black;
   color: white;
-
 }
 html {
   scroll-behavior: smooth;
@@ -27,7 +26,7 @@ nav {
   top: 0;
   z-index: 1;
 }
-nav ul{
+nav ul {
   display: flex;
   gap: 55px;
 }
@@ -46,10 +45,10 @@ nav a {
   font-size: 18px;
   font-weight: 4000;
 }
-nav p{
+nav p {
   font-size: 18px;
 }
-#change_theme{
+#change_theme {
   cursor: pointer;
 }
 .container {
@@ -87,7 +86,7 @@ nav p{
   margin-top: 19px;
   cursor: pointer;
 }
-.container .text-area button a{
+.container .text-area button a {
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -295,7 +294,7 @@ footer h1 {
 footer p {
   font-weight: 600;
 }
-#icon{
+#icon {
   cursor: pointer;
   width: 40px;
 }
@@ -303,12 +302,16 @@ footer p {
 ::-webkit-scrollbar {
   width: 5px;
 }
+
 ::-webkit-scrollbar-track {
   background: rgb(20, 25, 27);
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(207, 27, 27);
   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(171, 71, 71);
 }
 nav .fa-bars {
   display: none;
@@ -322,32 +325,32 @@ nav .fa-bars {
   border-radius: 15px;
 }
 
-.test  .div2 img {
+.test .div2 img {
   width: 300px;
   border-radius: 15px;
 }
 
-.test  .div3 img {
+.test .div3 img {
   width: 300px;
   border-radius: 15px;
 }
 
-.test  .div4 img {
+.test .div4 img {
   width: 300px;
   border-radius: 15px;
 }
 
-.test  .div5 img {
+.test .div5 img {
   width: 300px;
   border-radius: 15px;
 }
 
-.test  .div6 img {
+.test .div6 img {
   width: 300px;
   border-radius: 15px;
 }
 
-.test div{
+.test div {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -355,6 +358,12 @@ nav .fa-bars {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1004px){
+  .skills {
+    padding: 120px 100px 0px 100px;
+  }
+
+}
 
 @media (max-width: 768px) {
   nav {
@@ -398,7 +407,7 @@ nav .fa-bars {
   .container .img-section {
     position: absolute;
     left: 30%;
-    top: 340px;
+    top: 40px;
   }
 
   .container .img-section img {
@@ -453,4 +462,10 @@ nav .fa-bars {
   .intro_1 {
     display: none;
   }
+}
+@media (max-width:562px) {
+  .container .img-section {
+    top: 335px;
+  }
+  
 }
