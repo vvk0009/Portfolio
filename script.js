@@ -1,3 +1,4 @@
+        //dark mode lite mode
 let themeBtn = document.getElementById("icon");
 // let icon = document.getElementById("icon");
 // let logo = document.getElementById("logo");
@@ -47,3 +48,23 @@ const changeTheme = () => {
 }
 
 themeBtn.addEventListener("click", changeTheme);
+
+
+
+        //form submit
+var submitted = false;
+
+window.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.getElementById("hiddenConfirm");
+    var form = document.querySelector(".form");
+
+    function handleIframeLoad() {
+        if (submitted) {
+            form.reset();
+            alert("Thankyou for your message! We will get back to you soon!"); 
+        }
+    }
+    iframe.addEventListener("load", handleIframeLoad);
+});
+
+

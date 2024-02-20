@@ -183,7 +183,14 @@
         <div></div>
     </div>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe32M3MRgzNagP0qaoOfjI7wN_tBXCmgBTLTHH04luB-Pbp_A/formResponse" class="form">
+
+
+    <!-- <script type="text/javascript">var submitted=false</script>
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){ window.location='index.html';}"></iframe> -->
+
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;"></iframe>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe32M3MRgzNagP0qaoOfjI7wN_tBXCmgBTLTHH04luB-Pbp_A/formResponse" class="form" method="post" target="hiddenConfirm" onsubmit="submitted=true" >
 
         <!-- https://docs.google.com/forms/d/e/1FAIpQLSe32M3MRgzNagP0qaoOfjI7wN_tBXCmgBTLTHH04luB-Pbp_A/formResponse
         ?usp=pp_url&=vvk&=vvk&=vvk
@@ -209,13 +216,14 @@
         <p>© 2024 copyright all right reserved</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <!-- 
     <script>
         AOS.init();
 
     </script> -->
     <script src="script.js"></script>
+    
 </body>
 
 </html>
