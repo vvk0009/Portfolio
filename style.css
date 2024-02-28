@@ -3,11 +3,11 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   background-color: black;
   color: white;
-  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -27,6 +27,16 @@ nav {
   top: 0;
   z-index: 1;
 }
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 10px;
+  background: white;
+}
 nav ul {
   display: flex;
   gap: 55px;
@@ -36,9 +46,6 @@ nav ul li {
 }
 nav img {
   width: 65px;
-}
-.mobile_nav {
-  display: none;
 }
 nav a {
   text-decoration: none;
@@ -53,20 +60,19 @@ nav p {
 .nav-link.active {
   color: rgb(207, 27, 27);
   font-weight: bold;
-  position: relative; 
+  position: relative;
 }
 .nav-link.active::after {
-  content: ''; 
-  position: absolute; 
-  left: 0; 
-  bottom: -9px; 
-  width: 100%; 
-  height: 2px; 
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 100%;
+  height: 2px;
   background-color: rgb(207, 27, 27);
   height: 5px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
-
 
 #change_theme {
   cursor: pointer;
@@ -321,7 +327,7 @@ footer p {
   width: 40px;
 }
 
-a{
+a {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -384,36 +390,40 @@ nav .fa-bars {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1004px){
+@media (max-width: 1004px) {
   .skills {
     padding: 120px 100px 0px 100px;
   }
-
 }
 
 @media (max-width: 768px) {
-  nav {
+  .hamburger {
+    display: block;
+  }
+  
+
+  .animation {
     display: none;
   }
-
-  .mobile_nav {
-    display: block;
-    display: flex;
-    position: fixed;
-    top: 0;
-    background-color: black;
-    align-items: center;
+  nav {
     justify-content: space-between;
+    height: 8vh;
     width: 100%;
-    padding: 0px 20px;
-    z-index: 1;
   }
-  .mobile_nav img {
-    width: 65px;
+  nav ul{
+    position: fixed;
+    top: 8vh;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
   }
-
-  .fa-bars {
-    font-size: 28px;
+  nav ul.active{
+    opacity: 1;
   }
   .container {
     flex-direction: column;
@@ -489,9 +499,8 @@ nav .fa-bars {
     display: none;
   }
 }
-@media (max-width:562px) {
+@media (max-width: 562px) {
   .container .img-section {
     top: 335px;
   }
-  
 }

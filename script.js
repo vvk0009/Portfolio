@@ -13,32 +13,35 @@ const changeTheme = () => {
         // document.nav.style.backgroundColor = "white";
         icon.src = "img/moon.png"
         document.querySelector('nav').style.backgroundColor = "white";
+        document.querySelectorAll('.social a i').forEach(el=>{
+            el.style.color = "black";
+        })
         // document.querySelector('nav,nav ul li a').style.color = "black";
         document.querySelectorAll('nav, nav ul li a').forEach(element => {
             element.style.color = "black";
         });
 
-        document.querySelector('footer').style.backgroundColor = "white"
-        document.querySelector('footer').style.color = "black"
+        // document.querySelector('footer').style.backgroundColor = "white"
+        // document.querySelector('footer').style.color = "black"
         logo.src = "img/logo1.jpg"
         document.body.style.transition = "all 0.5s";
-
-        
-
-        
+  
         
     } else {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
         // document.nav.style.backgroundColor = "black";
         icon.src = "img/sun.png"
+        document.querySelectorAll('.social a i').forEach(el=>{
+            el.style.color = "white";
+        })
         document.querySelector('nav').style.backgroundColor = "rgb(31, 31, 31)";
         document.querySelectorAll('nav, nav ul li a').forEach(element => {
             element.style.color = "white";
         });
 
-        document.querySelector('footer').style.backgroundColor = "#14191b"
-        document.querySelector('footer').style.color = "white"
+        // document.querySelector('footer').style.backgroundColor = "#14191b"
+        // document.querySelector('footer').style.color = "white"
         logo.src = "img/logo-removebg-preview.png"
         document.body.style.transition = "all 0.5s";
 
@@ -80,3 +83,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//responsive nav bar
+var hamburger = document.querySelector(".hamburger");
+
+hamburger.onclick = function () {
+    var navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+};
+
+var navItems = document.querySelectorAll(".nav-bar a");
+
+navItems.forEach(function (navItem) {
+    navItem.onclick = function () {
+        var navBar = document.querySelector(".nav-bar");
+        navBar.classList.remove("active");
+    };
+});
