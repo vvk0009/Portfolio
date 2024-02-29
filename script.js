@@ -21,6 +21,18 @@ const changeTheme = () => {
             element.style.color = "black";
         });
 
+        // document.querySelectorAll('.nav-bar').forEach(element => {
+        //     element.style.backgroundColor = "white";
+        // });
+
+        document.querySelectorAll('.hamburger div').forEach(element => {
+            element.style.backgroundColor = "black";
+        });
+
+        document.querySelectorAll('.ham div').forEach(element => {
+            element.style.backgroundColor = "black";
+        });
+
         // document.querySelector('footer').style.backgroundColor = "white"
         // document.querySelector('footer').style.color = "black"
         logo.src = "img/logo1.jpg"
@@ -40,6 +52,18 @@ const changeTheme = () => {
             element.style.color = "white";
         });
 
+        // document.querySelectorAll('.nav-bar').forEach(element => {
+        //     element.style.backgroundColor = "rgb(31, 31, 31)";
+        // });
+
+        document.querySelectorAll('.hamburger div').forEach(element => {
+            element.style.backgroundColor = "white";
+        });
+
+        document.querySelectorAll('.ham div').forEach(element => {
+            element.style.backgroundColor = "white";
+        });
+
         // document.querySelector('footer').style.backgroundColor = "#14191b"
         // document.querySelector('footer').style.color = "white"
         logo.src = "img/logo-removebg-preview.png"
@@ -56,7 +80,6 @@ themeBtn.addEventListener("click", changeTheme);
 
         //form submit
 var submitted = false;
-
 window.addEventListener("DOMContentLoaded", function() {
     var iframe = document.getElementById("hiddenConfirm");
     var form = document.querySelector(".form");
@@ -85,17 +108,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //responsive nav bar
 var hamburger = document.querySelector(".hamburger");
-
 hamburger.onclick = function () {
     var navBar = document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
 };
 
 var navItems = document.querySelectorAll(".nav-bar a");
-
 navItems.forEach(function (navItem) {
     navItem.onclick = function () {
         var navBar = document.querySelector(".nav-bar");
         navBar.classList.remove("active");
     };
 });
+
+
+//hamburger animation
+var isHam = false;
+hamburger.addEventListener('click', function() {
+    if (isHam) {
+        this.classList.remove('ham');
+        this.classList.add('hamburger');
+    } else {
+        this.classList.remove('hamburger');
+        this.classList.add('ham');
+    }
+    isHam = !isHam;
+});
+

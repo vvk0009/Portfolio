@@ -36,7 +36,9 @@ nav {
   height: 3px;
   margin: 5px 10px;
   background: white;
+  transition: 0.3s ease;
 }
+
 nav ul {
   display: flex;
   gap: 55px;
@@ -324,7 +326,8 @@ footer p {
 }
 #icon {
   cursor: pointer;
-  width: 40px;
+  width: 30px;
+  margin-top: 10px;
 }
 
 a {
@@ -401,6 +404,25 @@ nav .fa-bars {
     display: block;
   }
   
+  .ham div:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+    width: 30px;
+  height: 3px;
+  margin: 5px 10px;
+  background: white;
+  transition: all 0.3s ease;
+  }
+  .ham div:nth-child(3) {
+    transform: translateY(-4px) rotate(45deg);
+    width: 30px;
+  height: 3px;
+  margin: 5px 10px;
+  background: white;
+  transition: all 0.3s ease;
+  }
+  .ham div:nth-child(2 ) {
+    display: none;
+  }
 
   .animation {
     display: none;
@@ -414,13 +436,19 @@ nav .fa-bars {
     position: fixed;
     top: 8vh;
     height: 100vh;
-    background-color: black;
+    /* background-color: rgb(31, 31, 31); */
     width: 100%;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    padding-top: 50px;
     transition: all 0.3s ease;
     opacity: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    font-weight: 700;
   }
   nav ul.active{
     opacity: 1;
