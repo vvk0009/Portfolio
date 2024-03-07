@@ -432,19 +432,24 @@ nav .fa-bars {
     height: 8vh;
     width: 100%;
   }
-  nav ul{
+  .nav-bar{
     position: fixed;
     top: 8vh;
     height: 100vh;
     /* background-color: rgb(31, 31, 31); */
     width: 100%;
-    flex-direction: column;
     text-align: center;
     padding-top: 50px;
     transition: all 0.3s ease;
     opacity: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
+    display: none;
+    
   }
+  nav ul li{
+    margin-top: 20px;
+  }
+
 
   nav ul li a {
     font-size: 25px;

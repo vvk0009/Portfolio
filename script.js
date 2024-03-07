@@ -111,6 +111,7 @@ var hamburger = document.querySelector(".hamburger");
 hamburger.onclick = function () {
     var navBar = document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
+    navBar.style.display = "block"; 
 };
 
 var navItems = document.querySelectorAll(".nav-bar a");
@@ -118,6 +119,7 @@ navItems.forEach(function (navItem) {
     navItem.onclick = function () {
         var navBar = document.querySelector(".nav-bar");
         navBar.classList.remove("active");
+        navBar.style.display = "none"; 
     };
 });
 
