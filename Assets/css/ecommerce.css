@@ -1,0 +1,151 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(207, 27, 27);
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+}
+
+.title h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+.title div {
+    background-color: rgb(207, 27, 27);
+    height: 0.26rem;
+    width: 490px;
+    position: absolute;
+    top: 48px;
+}
+.ecommerce .frame img{
+    width: 30%;
+    border-radius: 20px;
+    margin: 20px;
+}
+.ecommerce .frame{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    gap: 120px;
+}
+.ecommerce .frame p{
+    font-size: 23px;
+    line-height: 55px;
+    margin-top: 20px;
+}
+.ecommerce .frame span{
+    font-size: 27px;
+    font-weight: bolder;
+}
+.frame-button {
+    margin-top: 50px;
+}
+.frame-button a {
+    background-color: rgb(207, 27, 27);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 2.5rem;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.description{
+    text-align: center;
+    margin: 0px 20px;
+}
+.description h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.description p{
+    font-size: 20px;
+    margin: 20px;
+}
+.objective{
+    margin: 50px;
+    line-height: 40px;
+}
+.objective h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.objective li{
+    font-size: 21px;
+}
+.scope{
+    margin: 50px;
+    line-height: 40px;
+}
+.scope h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.scope h3{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.scope li{
+    font-size: 21px;
+}
+
+.technology h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.technology li{
+    font-size: 21px;
+}
+.technology{
+    margin: 50px;
+    line-height: 40px;
+}
+.objective span{
+    font-weight: bolder;
+}
+.technology span{
+    font-weight: bolder;
+}
+.scope span{
+    font-weight: bolder;
+}
+
+
+
+@media (max-width: 768px){
+    .ecommerce .frame{
+        flex-direction: column;
+        align-items: center; 
+        gap: 0px;  
+    }
+    .ecommerce .frame img{
+        width: 90%;
+    }
+    .ecommerce .frame div{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .ecommerce .frame p{
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .ecommerce .title h1{
+        font-size: 20px;
+    }
+    .title div {
+         width: 190px;
+    }
+    .ecommerce .frame p{
+        font-size: 23px;
+        line-height: 55px;
+        margin-top: 20px;
+    }
+}

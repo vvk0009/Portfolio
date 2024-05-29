@@ -11,7 +11,7 @@ const changeTheme = () => {
         document.body.style.color = "black";
 
         // document.nav.style.backgroundColor = "white";
-        icon.src = "img/moon.png"
+        icon.src = "../Assets/img/moon.png"
         document.querySelector('nav').style.backgroundColor = "white";
         document.querySelectorAll('.social a i').forEach(el=>{
             el.style.color = "black";
@@ -35,7 +35,7 @@ const changeTheme = () => {
 
         // document.querySelector('footer').style.backgroundColor = "white"
         // document.querySelector('footer').style.color = "black"
-        logo.src = "img/logo1.jpg"
+        logo.src = "../Assets/img/logo1.jpg"
         document.body.style.transition = "all 0.5s";
   
         
@@ -43,7 +43,7 @@ const changeTheme = () => {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
         // document.nav.style.backgroundColor = "black";
-        icon.src = "img/sun.png"
+        icon.src = "Assets/img/sun.png"
         document.querySelectorAll('.social a i').forEach(el=>{
             el.style.color = "white";
         })
@@ -66,7 +66,7 @@ const changeTheme = () => {
 
         // document.querySelector('footer').style.backgroundColor = "#14191b"
         // document.querySelector('footer').style.color = "white"
-        logo.src = "img/logo-removebg-preview.png"
+        logo.src = "../Assets/img/logo-removebg-preview.png"
         document.body.style.transition = "all 0.5s";
 
 
@@ -109,31 +109,24 @@ document.addEventListener("DOMContentLoaded", function() {
 //responsive nav bar
 var hamburger = document.querySelector(".hamburger");
 hamburger.onclick = function () {
-    var navBar = document.querySelector(".nav-bar");
+    var navBar = document.querySelector(".mob-nav-bar");
     navBar.classList.toggle("active");
-    navBar.style.display = "block"; 
+    navBar.style.display = "block";
 };
 
-var navItems = document.querySelectorAll(".nav-bar a");
+var navItems = document.querySelectorAll(".mob-nav-bar a");
 navItems.forEach(function (navItem) {
     navItem.onclick = function () {
-        var navBar = document.querySelector(".nav-bar");
+        var navBar = document.querySelector(".mob-nav-bar");
         navBar.classList.remove("active");
-        navBar.style.display = "none"; 
+        // navBar.style.display = "none"; 
     };
 });
 
 
 //hamburger animation
-var isHam = false;
-hamburger.addEventListener('click', function() {
-    if (isHam) {
-        this.classList.remove('ham');
-        this.classList.add('hamburger');
-    } else {
-        this.classList.remove('hamburger');
-        this.classList.add('ham');
-    }
-    isHam = !isHam;
-});
 
+
+document.getElementById('soon').addEventListener('click', function() {
+    window.alert('Coming soon');
+});

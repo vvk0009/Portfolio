@@ -256,9 +256,24 @@ nav p {
   border-radius: 10px;
 }
 
+.project-button {
+  text-align: center;
+  margin-top: 30px;
+}
+.project-button a {
+  background-color: rgb(207, 27, 27);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
 .button {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .button a {
   background-color: rgb(207, 27, 27);
@@ -354,43 +369,30 @@ nav .fa-bars {
 .mobile_project {
   display: none;
 }
-
-.test .div1 img {
-  width: 300px;
-  border-radius: 15px;
+.test .project-img{
+  width: 45%;
+  border-radius: 10px;
+  border: 3px solid red;
 }
-
-.test .div2 img {
-  width: 300px;
-  border-radius: 15px;
+.test {
+  text-align: center;
+  margin-top: 50px;
 }
-
-.test .div3 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.test .div4 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.test .div5 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.test .div6 img {
-  width: 300px;
-  border-radius: 15px;
-}
-
-.test div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.test p{
+  font-size: 18px;
+  font-weight: 600;
   margin-top: 20px;
-  flex-wrap: wrap;
+}
+.project{
+  display: flex;
+  justify-content: space-between;
+}
+.more{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+
 }
 
 @media (max-width: 1004px) {
@@ -400,6 +402,15 @@ nav .fa-bars {
 }
 
 @media (max-width: 768px) {
+  .button {
+    margin-top: 50px;
+  }
+  .more{
+    flex-direction: column;
+  }
+  .project {
+    flex-direction: column;
+  }
   .hamburger {
     display: block;
   }
@@ -432,7 +443,7 @@ nav .fa-bars {
     height: 8vh;
     width: 100%;
   }
-  .nav-bar{
+  .mob-nav-bar{
     position: fixed;
     top: 8vh;
     height: 100vh;
@@ -533,6 +544,12 @@ nav .fa-bars {
   }
 }
 @media (max-width: 562px) {
+  .project-button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
   .container .img-section {
     top: 335px;
   }
